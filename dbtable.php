@@ -11,6 +11,8 @@ gender VARCHAR(20) NOT NULL,
 Language VARCHAR(20) NOT NULL
 )";
 
+$sql = "ALTER TABLE user MODIFY Language VARCHAR(60)";
+
 if(mysqli_query($conn, $sql)){
     echo "database created succesfully";
  }else {
