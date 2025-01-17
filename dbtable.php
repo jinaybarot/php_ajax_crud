@@ -13,11 +13,10 @@ Language VARCHAR(20) NOT NULL
 
 $sql = "ALTER TABLE user MODIFY Language VARCHAR(60)";
 
-if(mysqli_query($conn, $sql)){
-    echo "database created succesfully";
- }else {
-    echo "connection failed" . mysqli_error($conn);
- }
+if (mysqli_query($conn, $sql)) {
+   echo "database created succesfully";
+} else {
+   echo "connection failed" . mysqli_error($conn);
+}
 
- mysqli_close($conn);
-?>
+mysqli_close($conn);
